@@ -1,8 +1,9 @@
 import {StyleSheet} from 'react-native';
+import {scaleFontSize} from '../../assets/styles/scalling';
 
 const style = StyleSheet.create({
   title: {
-    fontSize: 32,
+    fontSize: scaleFontSize(24),
     fontWeight: 'bold',
     color: 'blue',
   },

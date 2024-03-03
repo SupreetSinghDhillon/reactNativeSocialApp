@@ -24,6 +24,13 @@ const globalStyles = StyleSheet.create({
     margin: 10,
     flexDirection: 'row',
   },
+  userPostsContainer: {
+    marginHorizontal: 10,
+    padding: 10,
+    borderRadius: 20,
+    borderBottomColor: 'black', // Add this line
+    borderBottomWidth: 1, // Add this line
+  },
 });
 
 export default globalStyles;

@@ -1,8 +1,9 @@
 import {StyleSheet} from 'react-native';
+import {horizontalScale} from '../../assets/styles/scalling';
 
 const style = StyleSheet.create({
   storyContainer: {
-    margin: 10,
+    margin: horizontalScale(10),
   },
   storyImage: {
     width: 70,
