@@ -5,7 +5,7 @@ import {
   View,
   Text,
   FlatList,
-  Switch,
+  StatusBar,
   Dimensions,
   Platform,
 } from 'react-native'; // Add import statement for Text
@@ -193,6 +193,7 @@ const App = () => {
 
   return (
     <SafeAreaView>
+      <StatusBar backgroundColor={'blue'} barStyle={'dark-content'} />
       <View>
         <FlatList
           ListHeaderComponent={
@@ -211,15 +212,7 @@ const App = () => {
                   flex: 1,
                   flexDirection: 'row',
                   justifyContent: 'flex-start',
-                }}>
-                <Switch
-                  style={
-                    Platform.OS === 'android' && {
-                      transform: [{scaleX: 2}, {scaleY: 2}],
-                    }
-                  }
-                />
-              </View>
+                }}></View>
               <View style={globalStyles.userStoryContainer}>
                 <FlatList
                   onEndReachedThreshold={0.5}
